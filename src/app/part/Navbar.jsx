@@ -99,7 +99,7 @@ function Navbar() {
               Contact Me
             </h2>
             <p className="text-gray-700 flex items-center justify-center gap-2">
-              <MdOutlineEmail className="text-blue-600" /> Email: example@gmail.com
+              <MdOutlineEmail className="text-blue-600" /> Email: tanzeel0680@gmail.com
             </p>
             <div className="mt-5 flex justify-center">
               <button
