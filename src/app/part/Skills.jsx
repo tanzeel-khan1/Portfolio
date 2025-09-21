@@ -17,6 +17,7 @@ import {
   SiExpress,
   SiRedux,
 } from "react-icons/si";
+import { FaBootstrap } from "react-icons/fa";
 
 const skills = [
   { name: "HTML", icon: <FaHtml5 className="text-orange-500" /> },
@@ -25,19 +26,21 @@ const skills = [
   { name: "React", icon: <FaReact className="text-cyan-400" /> },
   {
     name: "Next.js",
-    icon: <SiNextdotjs className="text-black dark:text-white" />,
+    icon: <SiNextdotjs className="text-black" />,
   },
   { name: "Tailwind CSS", icon: <SiTailwindcss className="text-teal-400" /> },
   { name: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
   {
     name: "Express",
-    icon: <SiExpress className="text-gray-700 dark:text-white" />,
+    icon: <SiExpress className="text-gray-700" />,
   },
   { name: "MERN Stack", icon: <FaNodeJs className="text-green-600" /> },
-  { name: "Git", icon: <FaGitAlt className="text-red-500" /> },
+  { name: "Bootstrap", icon: <FaBootstrap className="text-purple-600" />
+ },
   {
     name: "GitHub",
-    icon: <FaGithub className="text-gray-800 dark:text-white" />,
+    icon:<FaGithub className="text-black" />
+,
   },
   { name: "Redux", icon: <SiRedux className="text-purple-500" /> },
 ];
