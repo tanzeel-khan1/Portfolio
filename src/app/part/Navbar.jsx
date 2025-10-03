@@ -62,7 +62,7 @@ function Navbar() {
         </div>
 
         {isOpen && (
-          <div className="md:hidden bg-white border-t border-gray-200">
+          <div className="md:hidden bg-white border-t border-gray-200 p-8">
             <ul className="flex flex-col space-y-3 p-4 font-medium">
               <li className="text-gray-700 hover:text-blue-600 transition cursor-pointer">
                 <Link href="/">Home</Link>
@@ -82,7 +82,7 @@ function Navbar() {
                     setIsOpen(false);
                     setShowModal(true);
                   }}
-                  className="bg-blue-600 text-white w-full py-2 rounded-md hover:bg-blue-700 transition"
+                  className="bg-blue-600 cursor-pointer mt-2 text-white w-full py-2 rounded-md hover:bg-blue-700 transition"
                 >
                   Contact
                 </button>
@@ -95,7 +95,7 @@ function Navbar() {
       {showModal && (
         <div className="fixed inset-0 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg shadow-lg w-80 p-6 text-center">
-            <h2 className="text-xl font-semibold mb-4 text-blue-600">
+            <h2 className="text-xl font-semibold mb-4 text-blue-600 cursor-pointer">
               Contact Me
             </h2>
             <p className="text-gray-700 flex items-center justify-center gap-2">
