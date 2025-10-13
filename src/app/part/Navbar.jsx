@@ -8,14 +8,15 @@ import { MdOutlineEmail } from "react-icons/md";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [showModal, setShowModal] = useState(false);
-  const [mounted, setMounted] = useState(false); 
+  const [mounted, setMounted] = useState(false);
   const router = useRouter();
 
-  useEffect(() => setMounted(true), []); 
+  useEffect(() => setMounted(true), []);
 
   const goToSkills = () => router.push("/first");
+  const goToProjects = () => router.push("/project");
 
-  if (!mounted) return null; 
+  if (!mounted) return null;
 
   return (
     <>
@@ -33,12 +34,21 @@ function Navbar() {
               <li className="text-gray-700 hover:text-blue-600 transition cursor-pointer">
                 <Link href="/">Home</Link>
               </li>
+
               <li
                 className="text-gray-700 hover:text-blue-600 transition cursor-pointer"
                 onClick={goToSkills}
               >
                 Skill's
               </li>
+
+              <li
+                className="text-gray-700 hover:text-blue-600 transition cursor-pointer"
+                onClick={goToProjects}
+              >
+                Projects
+              </li>
+
               <li>
                 <button
                   onClick={() => setShowModal(true)}
@@ -67,6 +77,7 @@ function Navbar() {
               <li className="text-gray-700 hover:text-blue-600 transition cursor-pointer">
                 <Link href="/">Home</Link>
               </li>
+
               <li
                 className="text-gray-700 hover:text-blue-600 transition cursor-pointer"
                 onClick={() => {
@@ -76,6 +87,17 @@ function Navbar() {
               >
                 Skill's
               </li>
+
+              <li
+                className="text-gray-700 hover:text-blue-600 transition cursor-pointer"
+                onClick={() => {
+                  setIsOpen(false);
+                  goToProjects();
+                }}
+              >
+                Project
+              </li>
+
               <li>
                 <button
                   onClick={() => {
@@ -99,7 +121,8 @@ function Navbar() {
               Contact Me
             </h2>
             <p className="text-gray-700 flex items-center justify-center gap-2">
-              <MdOutlineEmail className="text-blue-600" /> Email: tanzeel0680@gmail.com
+              <MdOutlineEmail className="text-blue-600" /> Email:
+              tanzeel0680@gmail.com
             </p>
             <div className="mt-5 flex justify-center">
               <button

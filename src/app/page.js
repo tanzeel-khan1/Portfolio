@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './part/Navbar'
 import Second from './part/Second'
 import Skills from './part/Skills'
+import Projects from './part/Projects'
 
 const page = () => {
   return (
@@ -9,6 +10,7 @@ const page = () => {
     <Navbar/>
     <Second/>
     <Skills/>
+    <Projects/>
     </>
   )
 }
