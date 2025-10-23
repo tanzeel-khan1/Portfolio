@@ -7,31 +7,22 @@ import DoctorApp from "./DoctorApp";
 
 const Projects = () => {
   return (
-    <>
-      <div className="bg-white">
-        <motion.h1
-          initial={{ opacity: 0, y: -30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          viewport={{ once: false, amount: 0.3 }}
-          className="text-4xl md:text-5xl font-extrabold bg-white text-blue-600 mb-10 text-center "
-        >
-          My Projects
-        </motion.h1>
-        <div className="h-full w-full bg-white md:pl-22 pr-3 md:pr-22">
-          <div className="h-full w-full  grid md:flex">
-            <StartUp />
-            <DoctorApp/>
-          </div>
-        </div>
-         <div className="h-full w-full bg-white md:pl-22 pr-3 md:pr-22">
-          <div className="h-full w-full  grid md:flex">
-            <StartUp />
-            <DoctorApp/>
-          </div>
-        </div>
+    <div className="bg-white px-4 md:px-20 py-10">
+      <motion.h1
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        viewport={{ once: false, amount: 0.3 }}
+        className="text-4xl md:text-5xl font-extrabold text-blue-600 text-center mb-12"
+      >
+        My Projects
+      </motion.h1>
+
+      <div className="grid md:flex gap-10 justify-center">
+        <StartUp />
+        <DoctorApp />
       </div>
-    </>
+    </div>
   );
 };
 
