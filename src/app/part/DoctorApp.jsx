@@ -2,9 +2,10 @@ import React from 'react'
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 
-const StartUp = () => {
+const DoctorApp = () => {
   return (
-    <div>
+    <>
+     <div>
         <section className="min-h-screen bg-white  flex flex-col items-center justify-center px-6 py-16 ">
            
       
@@ -18,14 +19,14 @@ const StartUp = () => {
             >
               <div className="relative">
                 <img
-                  src="/prlogo.png"
+                  src="/doctorApp.png"
                   alt="Project Thumbnail"
                   className="w-full h-64 object-cover"
                 />
               </div>
       
               <div className="p-6 flex flex-col gap-3">
-                <h2 className="text-2xl font-bold text-gray-800">StartUp Website</h2>
+                <h2 className="text-2xl font-bold text-gray-800">Doctor App</h2>
                 <p className="text-gray-600 leading-relaxed">
                   This project is a demonstration of a fully responsive{" "}
                   <span className="text-blue-700 font-semibold">UI design</span> —
@@ -34,7 +35,7 @@ const StartUp = () => {
       
                 <div className="mt-4 flex justify-between items-center">
                   <a
-                    href="https://start-up-website-eosin.vercel.app/"
+                    href="https://doctor-app-indol.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-600 hover:text-blue-800 font-semibold flex items-center gap-1 transition"
@@ -50,7 +51,8 @@ const StartUp = () => {
             </motion.div>
           </section>
     </div>
+    </>
   )
 }
 
-export default StartUp
+export default DoctorApp
