@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import StartUp from "./StartUp";
 import DoctorApp from "./DoctorApp";
 import Wheather from "./Wheather";
+import Cars from "./Cars";
 
 const Projects = () => {
   return (
@@ -21,11 +22,13 @@ const Projects = () => {
 
       <div className="grid md:flex gap-10 justify-center">
         <StartUp />
-        <DoctorApp />
+        <Cars/>
 
       </div>
       <div className="grid md:flex gap-10 justify-center mt-20">
         <Wheather />
+                <DoctorApp />
+
 
       </div>
     </div>
