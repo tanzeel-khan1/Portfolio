@@ -22,12 +22,11 @@ const Projects = () => {
 
       <div className="grid md:flex gap-10 justify-center">
         <StartUp />
-        <Cars/>
+        <Cars />
       </div>
-       <div className="grid md:flex gap-10 justify-center">
-        <Wheather/>
-                <DoctorApp />
-
+      <div className="grid md:flex gap-10 justify-center mt-6">
+        <Wheather />
+        <DoctorApp />
       </div>
     </div>
   );

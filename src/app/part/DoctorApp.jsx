@@ -9,8 +9,8 @@ const DoctorApp = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7, ease: "easeOut" }}
       whileHover={{ scale: 1.03 }}
-      viewport={{ once: false, amount: 0.3 }}
-      className="bg-white flex flex-col items-center justify-center px-6 py-10 md:py-16 md:min-h-[70vh] rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden"
+      viewport={{ once: true, amount: 0.3 }}
+      className="bg-white flex flex-col items-center justify-center px-6 py-10 md:py-16 md:min-h-[70vh] rounded-2xl  hover: transition-all duration-300 overflow-hidden"
     >
       <div className="relative w-full max-w-md md:max-w-2xl">
         <img
