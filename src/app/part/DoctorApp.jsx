@@ -23,7 +23,6 @@ const DoctorApp = () => {
           <h2 className="text-2xl font-bold text-gray-800">Doctor App</h2>
           <p className="text-gray-600 leading-relaxed">
             This project is a demonstration of a fully responsive{" "}
-            <span className="text-blue-700 font-semibold">UI design</span> — built
             just for portfolio presentation.
           </p>
 

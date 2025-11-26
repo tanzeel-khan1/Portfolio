@@ -15,22 +15,21 @@ const Wheather = () => {
     >
       <div className="relative w-full max-w-md md:max-w-2xl">
         <img
-          src="/wh.png"
+          src="/real.png"
           alt="Project Thumbnail"
           className="w-full h-64 object-cover rounded-t-2xl"
         />
 
         <div className="p-6 flex flex-col gap-3">
-          <h2 className="text-2xl font-bold text-gray-800">Weather DashBoard</h2>
+          <h2 className="text-2xl font-bold text-gray-800">Real Estate Website</h2>
           <p className="text-gray-600 leading-relaxed">
             This project is a demonstration of a fully responsive{" "}
-            <span className="text-blue-700 font-semibold">UI design</span> — built
             just for portfolio presentation.
           </p>
 
           <div className="mt-4 flex justify-between items-center">
             <a
-              href="https://wheather-dashboard-ui.vercel.app/"
+              href="https://real-estate-7mef.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600 hover:text-blue-800 font-semibold flex items-center gap-1 transition"
