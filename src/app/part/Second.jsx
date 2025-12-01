@@ -35,7 +35,7 @@ function Second() {
   viewport={{ once: false }}
   className="mt-6 text-gray-600 leading-relaxed max-w-md"
 >
-  I’m a passionate frontend developer skilled in{" "}
+  I’m a passionate Full Stack developer skilled in{" "}
   <motion.span
     whileHover={{ scale: 1.1, color: "#2563EB" }}
     className="font-semibold text-blue-500 cursor-pointer"
