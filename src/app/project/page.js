@@ -1,13 +1,13 @@
-import React from "react";
 import Navbar from "../part/Navbar";
 import Projects from "../part/Projects";
-const page = () => {
+import Footer from "../part/Footer";
+
+export default function ProjectsPage() {
   return (
-    <div>
+    <main className="min-h-screen bg-[var(--bg)]">
       <Navbar />
       <Projects />
-    </div>
+      <Footer />
+    </main>
   );
-};
-
-export default page;
+}

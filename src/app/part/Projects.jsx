@@ -1,35 +1,29 @@
 "use client";
-import React from "react";
-import { motion } from "framer-motion";
-
 import StartUp from "./StartUp";
 import DoctorApp from "./DoctorApp";
 import Wheather from "./Wheather";
 import Cars from "./Cars";
 
-const Projects = () => {
+export default function Projects() {
   return (
-    <section className="bg-white px-4 md:px-20 py-20">
-      
-      <motion.h1
-        initial={{ opacity: 0, y: -40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-        viewport={{ once: true }}
-        className="text-4xl md:text-5xl font-extrabold text-blue-600 text-center mb-14"
-      >
-         Projects
-      </motion.h1>
+    <section id="projects" className="section-block">
+      <div className="container-main">
+        <header className="section-head text-center items-center mx-auto">
+          <p className="section-label">Portfolio</p>
+          <h2 className="section-title">Featured Projects</h2>
+          <p className="section-desc mx-auto">
+            Selected work — full-stack applications with clean UI and
+            production-ready features.
+          </p>
+        </header>
 
-      {/* PROJECT GRID */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 place-items-center">
-        <StartUp />
-        <Cars />
-        <Wheather />
-        <DoctorApp />
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 lg:gap-12">
+          <StartUp />
+          <DoctorApp />
+          <Wheather />
+          <Cars />
+        </div>
       </div>
     </section>
   );
-};
-
-export default Projects;
+}

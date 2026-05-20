@@ -1,79 +1,80 @@
 "use client";
-import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
-function Second() {
+export default function Second() {
   return (
-    <div className="min-h-screen w-full bg-white flex items-center justify-center">
-      <div className="h-auto md:h-[40rem] w-[90%] md:w-[80%] bg-white flex flex-col md:flex-row items-center justify-between px-6 md:px-12 shadow-lg rounded-lg">
-        
-        {/* LEFT CONTENT */}
-        <div className="w-full md:w-1/2 flex flex-col justify-center">
-          
-          <motion.h1
-            initial={{ x: -50, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-            viewport={{ once: false }}
-            className="text-3xl font-semibold mt-10 md:mt-0 text-blue-500"
-          >
-            Hi, I'm
-          </motion.h1>
+    <section className="section-block relative overflow-hidden">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -top-32 right-0 h-[28rem] w-[28rem] rounded-full bg-indigo-200/40 blur-3xl"
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute bottom-0 -left-24 h-80 w-80 rounded-full bg-blue-100/60 blur-3xl"
+      />
 
-          <motion.h1
-            initial={{ x: -50, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.6, ease: "easeOut" }}
-            viewport={{ once: false }}
-            className="text-5xl font-bold mt-2 text-blue-500"
-          >
-            Tanzeel
-          </motion.h1>
+      <div className="container-main relative">
+        <div className="flex flex-col-reverse lg:flex-row items-center gap-16 md:gap-20 lg:gap-28">
+          <div className="w-full lg:flex-1 text-center lg:text-left space-y-8 md:space-y-10">
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="space-y-6"
+            >
+              <p className="section-label">Full Stack Developer</p>
+              <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-[4.5rem] font-bold tracking-tight text-slate-900 leading-[1.08]">
+                Hi, I&apos;m{" "}
+                <span className="text-indigo-600">Tanzeel</span>
+              </h1>
+              <p className="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-xl mx-auto lg:mx-0">
+                I build modern, responsive, and scalable web applications with{" "}
+                <span className="font-semibold text-slate-800">React</span>,{" "}
+                <span className="font-semibold text-slate-800">Next.js</span>, and{" "}
+                <span className="font-semibold text-slate-800">MERN</span>.
+                Focused on clean code and polished user experiences.
+              </p>
+            </motion.div>
 
-          <motion.h2
-            initial={{ x: -50, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}
-            viewport={{ once: false }}
-            className="mt-4 text-xl md:text-2xl font-medium text-gray-700"
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.15 }}
+              className="flex flex-col sm:flex-row gap-4 sm:gap-5 justify-center lg:justify-start pt-2"
+            >
+              <Link href="/project" className="btn-primary">
+                View Projects
+                <ArrowRight size={18} />
+              </Link>
+              <a
+                href="https://github.com/tanzeel-khan1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary"
+              >
+                GitHub Profile
+              </a>
+            </motion.div>
+          </div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.7, delay: 0.1 }}
+            className="w-full lg:flex-1 flex justify-center lg:justify-end"
           >
-            Full Stack Software Engineer
-          </motion.h2>
-
-          <motion.p
-            initial={{ x: -50, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ delay: 0.4, duration: 0.6, ease: "easeOut" }}
-            viewport={{ once: false }}
-            className="mt-6 text-gray-600 leading-relaxed max-w-md"
-          >
-            I build modern, responsive, and scalable web applications using{" "}
-            <span className="font-semibold text-blue-500">React</span>,{" "}
-            <span className="font-semibold text-blue-500">Next.js</span>, and the{" "}
-            <span className="font-semibold text-blue-500">MERN Stack</span>.
-            Passionate about clean code, smooth user experiences, and turning
-            ideas into high-quality digital products.
-          </motion.p>
+            <div className="relative p-3 md:p-4">
+              <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-indigo-500/20 to-blue-400/10 blur-sm" />
+              <img
+                src="https://avatars.githubusercontent.com/u/204762480?v=4"
+                alt="Tanzeel Khan"
+                className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-[1.75rem] object-cover border-4 border-white shadow-[var(--shadow-lg)]"
+              />
+            </div>
+          </motion.div>
         </div>
-
-        {/* RIGHT IMAGE */}
-        <motion.div
-          initial={{ x: 50, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ once: false }}
-          className="w-full md:w-1/2 flex justify-center mt-8 md:mt-0"
-        >
-          <img
-            src="https://avatars.githubusercontent.com/u/204762480?v=4"
-            alt="Tanzeel"
-            className="h-60 w-60 md:h-[25rem] md:w-[25rem] rounded-full object-cover"
-          />
-        </motion.div>
-
       </div>
-    </div>
+    </section>
   );
 }
-
-export default Second;

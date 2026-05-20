@@ -1,50 +1,13 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
+import ProjectCard from "./ProjectCard";
 
-const DoctorApp = () => {
+export default function DoctorApp() {
   return (
-    <motion.section
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.7, ease: "easeOut" }}
-      whileHover={{ scale: 1.03 }}
-      viewport={{ once: true, amount: 0.3 }}
-      className="bg-white flex flex-col items-center justify-center px-6 py-10 md:py-16 md:min-h-[70vh] rounded-2xl  hover: transition-all duration-300 overflow-hidden"
-    >
-      <div className="relative w-full max-w-md md:max-w-2xl">
-        <img
-          src="/doctorApp.png"
-          alt="Project Thumbnail"
-          className="w-full h-64 object-cover rounded-t-2xl"
-        />
-
-        <div className="p-6 flex flex-col gap-3">
-          <h2 className="text-2xl font-bold text-gray-800">Doctor App</h2>
-          <p className="text-gray-600 leading-relaxed">
-            This project is a fully responsive portfolio demonstration,
-            featuring smooth animations and thoughtfully integrated icons to
-            enhance user experience and visual clarity.
-          </p>
-
-          <div className="mt-4 flex justify-between items-center">
-            <a
-              href="https://doctor-app-indol.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:text-blue-800 font-semibold flex items-center gap-1 transition"
-            >
-              View Project <ArrowUpRight size={18} />
-            </a>
-
-            <span className="bg-blue-100 text-blue-700 px-3 py-1 text-sm font-medium rounded-full">
-              React Js
-            </span>
-          </div>
-        </div>
-      </div>
-    </motion.section>
+    <ProjectCard
+      image="/res1.png"
+      title="Restaurant Platform"
+      description="MERN stack app with OTP auth, role-based dashboards, email confirmations, and Stripe payments."
+      href="https://www.loom.com/share/08e0728215c54c8696a8574380eb9513"
+      tag="MERN"
+    />
   );
-};
-
-export default DoctorApp;
+}

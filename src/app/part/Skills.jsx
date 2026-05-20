@@ -1,100 +1,4 @@
-// "use client";
-// import React from "react";
-// import { motion } from "framer-motion";
-// import {
-//   FaHtml5,
-//   FaCss3Alt,
-//   FaReact,
-//   FaNodeJs,
-//   FaGitAlt,
-//   FaGithub,
-// } from "react-icons/fa";
-// import {
-//   SiJavascript,
-//   SiNextdotjs,
-//   SiTailwindcss,
-//   SiMongodb,
-//   SiExpress,
-//   SiRedux,
-// } from "react-icons/si";
-// import { FaBootstrap } from "react-icons/fa";
-
-// const skills = [
-//   { name: "HTML", icon: <FaHtml5 className="text-orange-500" /> },
-//   { name: "CSS", icon: <FaCss3Alt className="text-blue-500" /> },
-//   { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
-//   { name: "React", icon: <FaReact className="text-cyan-400" /> },
-//   {
-//     name: "Next.js",
-//     icon: <SiNextdotjs className="text-black" />,
-//   },
-//   { name: "Tailwind CSS", icon: <SiTailwindcss className="text-teal-400" /> },
-//   { name: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
-//   {
-//     name: "Express",
-//     icon: <SiExpress className="text-gray-700" />,
-//   },
-//   { name: "MERN Stack", icon: <FaNodeJs className="text-green-600" /> },
-//   { name: "Bootstrap", icon: <FaBootstrap className="text-purple-600" />
-//  },
-//   {
-//     name: "GitHub",
-//     icon:<FaGithub className="text-black" />
-// ,
-//   },
-//   { name: "Redux", icon: <SiRedux className="text-purple-500" /> },
-// ];
-
-// const Skills = () => {
-//   return (
-//     <section className="py-16 bg-white">
-//       <div className="max-w-6xl mx-auto px-6 text-center">
-//         <motion.h1
-//           initial={{ y: -50, opacity: 0 }}
-//           whileInView={{ y: 0, opacity: 1 }}
-//           transition={{ duration: 0.6 }}
-//           viewport={{ once: false }}
-//           className="text-4xl font-bold text-gray-800 mb-4"
-//         >
-//           My <span className="text-blue-600">Skills</span>
-//         </motion.h1>
-
-//         <motion.p
-//           initial={{ opacity: 0 }}
-//           whileInView={{ opacity: 1 }}
-//           transition={{ delay: 0.3, duration: 0.6 }}
-//           viewport={{ once: false }}
-//           className="text-gray-600 max-w-2xl mx-auto mb-10"
-//         >
-//           I have expertise in modern web development technologies and
-//           frameworks.
-//         </motion.p>
-
-//         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
-//           {skills.map((skill, index) => (
-//             <motion.div
-//               key={index}
-//               initial={{ opacity: 0, scale: 0.8 }}
-//               whileInView={{ opacity: 1, scale: 1 }}
-//               transition={{ duration: 0.5, delay: index * 0.1 }}
-//               viewport={{ once: false }}
-//               className="flex flex-col items-center bg-gray-50 shadow-md p-6 rounded-xl hover:shadow-lg hover:scale-105 transition"
-//             >
-//               <div className="text-5xl mb-3">{skill.icon}</div>
-//               <p className="text-lg font-semibold text-gray-700">
-//                 {skill.name}
-//               </p>
-//             </motion.div>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Skills;
 "use client";
-import React from "react";
 import { motion } from "framer-motion";
 import {
   FaHtml5,
@@ -116,67 +20,49 @@ import {
 const skills = [
   { name: "HTML", icon: <FaHtml5 className="text-orange-500" /> },
   { name: "CSS", icon: <FaCss3Alt className="text-blue-500" /> },
-  { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
-  { name: "React", icon: <FaReact className="text-cyan-400" /> },
-  { name: "Next.js", icon: <SiNextdotjs className="text-gray-900" /> },
-  { name: "Tailwind CSS", icon: <SiTailwindcss className="text-teal-400" /> },
-  { name: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
-  { name: "Express.js", icon: <SiExpress className="text-gray-700" /> },
+  { name: "JavaScript", icon: <SiJavascript className="text-yellow-500" /> },
+  { name: "React", icon: <FaReact className="text-cyan-500" /> },
+  { name: "Next.js", icon: <SiNextdotjs className="text-slate-900" /> },
+  { name: "Tailwind CSS", icon: <SiTailwindcss className="text-teal-500" /> },
+  { name: "MongoDB", icon: <SiMongodb className="text-green-600" /> },
+  { name: "Express.js", icon: <SiExpress className="text-slate-600" /> },
   { name: "Node.js", icon: <FaNodeJs className="text-green-600" /> },
-  { name: "Redux", icon: <SiRedux className="text-purple-500" /> },
+  { name: "Redux", icon: <SiRedux className="text-purple-600" /> },
   { name: "Bootstrap", icon: <FaBootstrap className="text-purple-600" /> },
-  { name: "GitHub", icon: <FaGithub className="text-gray-800" /> },
+  { name: "GitHub", icon: <FaGithub className="text-slate-800" /> },
 ];
 
-const Skills = () => {
+export default function Skills() {
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-6xl mx-auto px-6 text-center">
-        
-        {/* HEADING */}
-        <motion.h1
-          initial={{ y: -40, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          viewport={{ once: false }}
-          className="text-4xl font-bold text-gray-800 mb-4"
-        >
-          My <span className="text-blue-600">Skills</span>
-        </motion.h1>
+    <section id="skills" className="section-block bg-white">
+      <div className="container-main">
+        <header className="section-head text-center items-center mx-auto">
+          <p className="section-label">Expertise</p>
+          <h2 className="section-title">Skills & Technologies</h2>
+          <p className="section-desc mx-auto">
+            Tools I use to build modern, scalable, and high-performance web
+            applications.
+          </p>
+        </header>
 
-        {/* SUBTEXT */}
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.2, duration: 0.6 }}
-          viewport={{ once: false }}
-          className="text-gray-600 max-w-2xl mx-auto mb-12"
-        >
-          Technologies and tools I use to build modern, scalable, and
-          high-performance web applications.
-        </motion.p>
-
-        {/* SKILLS GRID */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
-          {skills.map((skill, index) => (
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-6 lg:gap-8">
+          {skills.map((skill, i) => (
             <motion.div
               key={skill.name}
-              initial={{ opacity: 0, scale: 0.85 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: index * 0.08 }}
-              viewport={{ once: false }}
-              className="flex flex-col items-center bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition"
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.04, duration: 0.4 }}
+              className="card-surface flex flex-col items-center gap-5 p-8 md:p-10 hover:shadow-[var(--shadow-lg)] hover:border-indigo-100 transition-all duration-300"
             >
-              <div className="text-5xl mb-4">{skill.icon}</div>
-              <p className="text-lg font-semibold text-gray-700">
+              <div className="text-5xl">{skill.icon}</div>
+              <span className="text-[15px] font-semibold text-slate-700">
                 {skill.name}
-              </p>
+              </span>
             </motion.div>
           ))}
         </div>
       </div>
     </section>
   );
-};
-
-export default Skills;
+}

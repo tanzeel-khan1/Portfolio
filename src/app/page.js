@@ -1,18 +1,17 @@
-import React from 'react'
-import Navbar from './part/Navbar'
-import Second from './part/Second'
-import Skills from './part/Skills'
-import Projects from './part/Projects'
+import Navbar from "./part/Navbar";
+import Second from "./part/Second";
+import Skills from "./part/Skills";
+import Projects from "./part/Projects";
+import Footer from "./part/Footer";
 
-const page = () => {
+export default function Home() {
   return (
-    <>
-    <Navbar/>
-    <Second/>
-    <Skills/>
-    <Projects/>
-    </>
-  )
+    <main className="min-h-screen bg-[var(--bg)]">
+      <Navbar />
+      <Second />
+      <Skills />
+      <Projects />
+      <Footer />
+    </main>
+  );
 }
-
-export default page
