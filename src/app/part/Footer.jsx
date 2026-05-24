@@ -8,7 +8,6 @@ export default function Footer() {
         <div className="space-y-1">
           <p className="font-semibold text-slate-900">Tanzeel Khan</p>
           <p className="text-sm text-slate-500">
-            © {new Date().getFullYear()} — Full Stack Developer
           </p>
         </div>
         <div className="flex items-center gap-8">

@@ -24,18 +24,20 @@ export default function Second() {
               transition={{ duration: 0.6 }}
               className="space-y-6"
             >
-              <p className="section-label">Full Stack Developer</p>
-              <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-[4.5rem] font-bold tracking-tight text-slate-900 leading-[1.08]">
-                Hi, I&apos;m{" "}
-                <span className="text-indigo-600">Tanzeel</span>
-              </h1>
-              <p className="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-xl mx-auto lg:mx-0">
-                I build modern, responsive, and scalable web applications with{" "}
-                <span className="font-semibold text-slate-800">React</span>,{" "}
-                <span className="font-semibold text-slate-800">Next.js</span>, and{" "}
-                <span className="font-semibold text-slate-800">MERN</span>.
-                Focused on clean code and polished user experiences.
-              </p>
+
+<h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-[4.5rem] font-bold tracking-tight text-slate-900 leading-[1.08]">
+  Hi, I&apos;m{" "}
+  <span className="text-indigo-600">Tanzeel</span>
+</h1>
+
+<p className="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-xl mx-auto lg:mx-0">
+  I design and develop scalable, production-ready web applications using{" "}
+  <span className="font-semibold text-slate-800">React</span>,{" "}
+  <span className="font-semibold text-slate-800">Next.js</span>, and the{" "}
+  <span className="font-semibold text-slate-800">MERN stack</span>.  
+  With 3+ years of hands-on experience, I focus on clean architecture, 
+  performance optimization, and delivering polished user experiences.
+</p>
             </motion.div>
 
             <motion.div
