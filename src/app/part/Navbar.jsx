@@ -154,15 +154,7 @@ export default function Navbar() {
                 <FaLinkedin className="text-indigo-600 shrink-0" size={22} />
                 <span className="text-sm font-medium text-slate-700">LinkedIn</span>
               </a>
-              <a
-                href="https://github.com/tanzeel-khan1"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-4 p-4 rounded-xl bg-slate-50 hover:bg-indigo-50 border border-transparent hover:border-indigo-100 transition-colors"
-              >
-                <FaGithub className="text-slate-800 shrink-0" size={22} />
-                <span className="text-sm font-medium text-slate-700">GitHub</span>
-              </a>
+             
             </div>
 
             <button
